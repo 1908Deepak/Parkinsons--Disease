@@ -9,7 +9,7 @@ import streamlit as st
 # 2. Utility Functions
 # ======================================================
 
-def load_model(model_path='parkinsons_model.sav'):
+def load_model(model_path='Parkinsons/parkinsons_model.sav'):
     """
     Load the saved machine learning model from the specified file path.
 
@@ -157,8 +157,9 @@ def main():
 
 if __name__ == '__main__':
     # Load the model at the start of the application
-    loaded_model = load_model('parkinsons_model.sav')
+    loaded_model = load_model('Parkinsons/parkinsons_model.sav')
 
     # Run the application if the model is loaded successfully
     if loaded_model:
         main()
+
